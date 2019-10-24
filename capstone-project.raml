@@ -1,0 +1,81 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/7c492112-6d95-4b11-8b28-afc781bad235/ # 
+title: capstone project
+/ All use:
+  description: "All user"
+  get:
+    description: "Get the list of all use" 
+    responses:
+      200:
+        body:
+         application/json:
+           example: "Get new json Responce.json"
+  post:
+    description: "add the use to the list of user"
+    body:
+      application/json:
+        example: [{
+          "firstname":"bob",
+          "lastname":"Adam",
+          "department":"IIB"
+  },{     "first":"John",
+          "last":"ove",
+          "department":"Mule"}]
+    responses:
+     200:
+       body:
+         application/json:
+           example: "Get new json Responce.json"
+  delete:
+    responses:
+      200:
+        body:
+          application/json:
+            example: "delete user"
+      404:
+        body:
+          application/json:
+            example: "include not found in Get new json Responce.json"
+              
+        
+  put:
+    description: "update user"
+    body:
+      application/json:
+        example: [{
+          "id":"1",
+          "firstname":"bob",
+          "lastname":"Adam",
+          "department":"IIB"
+  } ,{    "id":2,
+          "first":"John",
+          "last":"ove",
+          "department":"Mule"}]
+    responses:
+      200:
+        body:
+          application/json:
+            example: "Get new json Responce.json"
+
+              
+    
+            
+          
+        
+     
+         
+    
+             
+
+    
+  
+    
+    
+
+  
+
+          
+            
+      
+    
+            
